@@ -42,7 +42,7 @@
                         </li>
                         <li><a href="#">Market Analysis</a></li>
                         <li><a href="#">Multi Market </a></li>
-                        <li><a href="#">Bets <i class="bi bi-caret-down-fill"></i></a>
+                        <li ><a href="#">Bets <i class="bi bi-caret-down-fill"></i></a>
                             <div class="sub-menu">
                                 <ul class="list-unstyled">
                                     <li><a href="#">Unsettled</a></li>
@@ -51,7 +51,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Client List <i class="bi bi-caret-down-fill"></i></a>
+                        <li ><a href="#">Client List <i class="bi bi-caret-down-fill"></i></a>
                             <div class="sub-menu">
                                 <ul class="list-unstyled">
                                     <li><span>c</span><a href="#"> Client</a></li>
@@ -60,7 +60,7 @@
                             </div>
                         </li>
                         <li><a href="#">Create Client</a></li>
-                        <li><a href="#">ProjectzM <i class="bi bi-caret-down-fill"></i></a>
+                        <li> <a href="#">ProjectzM <i class="bi bi-caret-down-fill"></i></a>
                             <div class="sub-menu">
                                 <ul class="list-unstyled">
                                     <li><a href="#">Profit Loss</a></li>
@@ -136,6 +136,15 @@
         $('.close-btn').click(function(){
             $('.side-menu').removeClass( 'open-menu' );
         });
+        
+
+        $('nav ul li').click(function(){
+            $(this).siblings().find('.sub-menu').hide();
+            $(this).find('.sub-menu').toggle();
+        });
+
+
+
     </script>
 </body>
 </html>
